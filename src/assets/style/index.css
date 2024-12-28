@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "LtRemark"; /* Name for the font */
+  src: url("../font/LTRemark.otf") format("opentype"); /* Path to the .otf file */
+  font-weight: normal; /* Optional: define font-weight */
+  font-style: normal; /* Optional: define font-style */
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "LtRemark";
+}
+

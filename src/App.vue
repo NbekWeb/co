@@ -1,6 +1,9 @@
-<script setup></script>
+<script setup>
+import Main from "@/components/Main.vue";
+</script>
 <template>
-  <div class="bg-black">as
-    <span class="border flex justify-center">s</span>
+  <div>
+    <Main />
+    <Main />
   </div>
 </template>
