@@ -22,7 +22,9 @@ module.exports = {
       },
       colors: {
         dark: '#080808',
-        grey: '#A8A8A8'
+        grey: '#A8A8A8',
+        gold: '#D0C6B880',
+        ice: '#B8C4D080'
       }
     },
   },

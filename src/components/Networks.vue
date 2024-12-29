@@ -17,7 +17,7 @@
     </a>
   </div>
 </template>
-<style scoped>
+<style >
 .icon {
   background: url("@/assets/img/icon.png") center center no-repeat;
   background-size: cover;
