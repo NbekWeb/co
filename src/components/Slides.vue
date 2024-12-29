@@ -45,15 +45,15 @@ const updateNavigationState = () => {
   <div class="relative pb-10 mt-18">
     <button
       class="absolute left-0 z-10 p-3 transform -translate-y-1/2 bg-transparent max-sm:hidden hover:cursor-pointer prev-button top-1/2 focus:outline-none"
-      :class="{ 'opacity-50 cursor-not-allowed': isPrevDisabled }"
-      :disabled="isPrevDisabled"
+      :class="{ 'opacity-30': isPrevDisabled }"
+      
     >
       <img src="@/assets/img/nav.png" class="rotate-180 w-7" />
     </button>
     <button
       class="absolute right-0 z-10 transform -translate-y-1/2 bg-transparent max-sm:hidden hover:cursor-pointer next-button top-1/2 focus:outline-none"
-      :class="{ 'opacity-50 cursor-not-allowed': isNextDisabled }"
-      :disabled="isNextDisabled"
+      :class="{ 'opacity-30': isNextDisabled }"
+      
     >
       <img src="@/assets/img/nav.png" class="w-7" />
     </button>
