@@ -8,7 +8,7 @@ import Networks from "./Networks.vue";
     class="flex flex-col justify-between w-full h-screen min-h-screen pb-20 main max-md:pb-5"
   >
     <div
-      class="flex gap-5 pt-2.5 items-center overflow-x-hidden overflow-y-hidden max-lg:justify-center max-lg:mt-5"
+      class="flex gap-5 pt-2.5 items-center overflow-x-hidden overflow-y-hidden max-lg:justify-center "
     >
       <img
         src="@/assets/img/leftarrow.png"
