@@ -26,5 +26,6 @@
 .icon:hover {
   background: url("@/assets/img/icon2.png") center center no-repeat;
   background-size: cover;
+  transform: scale(1.1);
 }
 </style>
