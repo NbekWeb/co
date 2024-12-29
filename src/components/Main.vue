@@ -33,17 +33,17 @@ import Networks from "./Networks.vue";
           {{ $t("creative_art_direction") }}
         </p>
         <button
-          class="flex max-md:hidden text-2xl shadow-dark group relative items-center justify-center h-18 w-[370px] shadow-dark text-white"
+          class="flex max-md:hidden text-2xl  group relative items-center justify-center h-18 w-[370px] text-white"
         >
           <img
             src="@/assets/img/btn.png"
-            class="absolute top-0 object-cover w-full rotate-180 group-hover:hidden"
+            class="absolute top-0 object-cover w-full transition-opacity duration-300 rotate-180 group-hover:opacity-0"
           />
           <img
             src="@/assets/img/btn2.png"
-            class="absolute top-0 hidden object-cover w-full group-hover:flex"
+            class="absolute top-0 object-cover w-full transition-opacity duration-300 opacity-0 group-hover:opacity-100"
           />
-          <span class="relative z-10">{{ $t("order_work") }}</span>
+          <span class="relative z-10">{{ $t("order_work") }}sa</span>
         </button>
       </div>
       <div
@@ -83,5 +83,8 @@ import Networks from "./Networks.vue";
 .ramka {
   background: url("@/assets/img/ramka2.png") center center no-repeat;
   background-size: cover;
+}
+.tr-3 {
+  transition: 30s ease;
 }
 </style>

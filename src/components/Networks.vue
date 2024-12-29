@@ -21,6 +21,7 @@
 .icon {
   background: url("@/assets/img/icon.png") center center no-repeat;
   background-size: cover;
+  transition:  .3s ease;
 }
 .icon:hover {
   background: url("@/assets/img/icon2.png") center center no-repeat;

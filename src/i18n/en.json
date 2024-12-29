@@ -1,4 +1,11 @@
 {
     "creative_art_direction": "Creative / Art Direction, Interaction Design, Branding, Web, Motion & UI/UX",
-    "order_work": "Order Work"
+    "order_work": "Order Work",
+    "our_work": "OUR WORK",
+    "all": "All",
+    "logotype": "Logotype",
+    "art": "Art",
+    "webGameDesign": "Web Game Design",
+    "gameInterface": "Game Interface",
+    "animation": "Animation"
 }
