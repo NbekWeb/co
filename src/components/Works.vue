@@ -19,7 +19,7 @@ const changeSelect = (i) => {
 <template>
   <div>
     <div
-      class="flex  justify-center w-full gap-5 text-white mt-12.5 text-xl px-20 max-xl:px-0 flex-wrap max-lg:text-base"
+      class="flex  justify-center w-full gap-5 text-white mt-12.5 text-xl px-20 max-xl:px-0 flex-wrap max-lg:text-base max-sm:text-sm"
     >
       <div
         v-for="(select, i) of selects"
