@@ -1,11 +1,15 @@
 <script setup>
-import Main from "@/components/Main.vue";
 import OurWork from "@/components/OurWork.vue";
+import Price from "@/components/Price.vue";
+import Main from "@/components/Main.vue";
 </script>
 <template>
   <div>
     <Main />
-    <OurWork />
-    <Main />
+    <div class="bg-dark ">
+
+      <OurWork />
+      <Price />
+    </div>
   </div>
 </template>

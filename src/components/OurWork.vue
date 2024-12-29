@@ -2,7 +2,7 @@
 import Works from "./Works.vue";
 </script>
 <template>
-  <div class="bg-dark pt-50">
+  <div class="pt-50">
     <div
       class="flex gap-5 pt-2.5 items-center overflow-x-hidden overflow-y-hidden max-lg:justify-center max-lg:mt-5"
     >
@@ -28,12 +28,8 @@ import Works from "./Works.vue";
         <img src="@/assets/img/card.png" class="col-span-2 max-lg:col-span-1" />
         <div class="flex flex-col items-center text-white/50 gap-7">
           <img src="@/assets/img/logo.png" class="h-24" />
-          <p class="2xl:text-2xl xl:text-xl max-xl:text-base ">
-            Welcome to a world where creativity and teztechnology come together
-            to create unique game worlds! We are a team of experienced designers
-            who turn ideas into exciting, living universes. Our services include
-            conceptual art projects, character creation, character design,
-            design
+          <p class="2xl:text-2xl xl:text-base ">
+           {{ $t('text_1') }}
           </p>
         </div>
       </div>

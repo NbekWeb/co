@@ -43,7 +43,7 @@ import Networks from "./Networks.vue";
             src="@/assets/img/btn2.png"
             class="absolute top-0 object-cover w-full transition-opacity duration-300 opacity-0 group-hover:opacity-100"
           />
-          <span class="relative z-10">{{ $t("order_work") }}sa</span>
+          <span class="relative z-10">{{ $t("order_work") }}</span>
         </button>
       </div>
       <div
