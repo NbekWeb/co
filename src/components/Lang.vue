@@ -39,7 +39,7 @@ onUnmounted(() => {
 
 <template>
   <div
-    class="flex flex-col justify-end text-xl md:relative max-md:text-base"
+    class="flex flex-col justify-end text-xl md:relative max-md:text-sm"
     ref="containerRef"
   >
     <div
