@@ -54,7 +54,7 @@ onUnmounted(() => {
         <span
           class="absolute text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
         >
-          <span class="pt-1 text-inner-shadow">En</span>
+          <span class="absolute top-0.5 text-inner-shadow">En</span>
         </span>
       </div>
       <div
@@ -65,7 +65,7 @@ onUnmounted(() => {
         <span
           class="absolute text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
         >
-          <span class="pt-1 text-inner-shadow">Ru</span>
+          <span class="absolute top-0.5 text-inner-shadow">Ru</span>
         </span>
       </div>
     </div>
