@@ -14,7 +14,7 @@ const handleVideoLoad = () => {
 
 <template>
   <div
-    class="flex flex-col justify-between w-full h-screen min-h-screen pb-20 main max-md:pb-5"
+    class="flex flex-col justify-between w-full h-full min-h-screen pb-20 main max-md:pb-5"
   >
     <!-- Placeholder background until the video is loaded -->
     <div
