@@ -1,16 +1,43 @@
 <script setup>
+import { ref } from 'vue';
 import Lang from "./Lang.vue";
 import Networks from "./Networks.vue";
+
+// Create a reactive state for video loaded status
+const isVideoLoaded = ref(false);
+
+// Handle the video load event
+const handleVideoLoad = () => {
+  isVideoLoaded.value = true;
+};
 </script>
 
 <template>
   <div
     class="flex flex-col justify-between w-full h-screen min-h-screen pb-20 main max-md:pb-5"
   >
-    <video class="background-video" autoplay loop muted>
+    <!-- Placeholder background until the video is loaded -->
+    <div
+      v-bind:class="{
+        'background-placeholder': !isVideoLoaded,
+        'background-video': isVideoLoaded
+      }"
+      class="absolute top-0 left-0 w-full h-full z-10"
+    ></div>
+
+    <!-- Background Video -->
+    <video
+      class="background-video"
+      autoplay
+      loop
+      muted
+      @canplay="handleVideoLoad"
+      v-show="isVideoLoaded"
+    >
       <source src="@/assets/img/bgVideo.webm" type="video/webm" />
       Your browser does not support the video tag.
     </video>
+
     <div
       class="flex gap-5 pt-2.5 items-center overflow-x-hidden overflow-y-hidden max-lg:justify-center"
     >
@@ -43,7 +70,6 @@ import Networks from "./Networks.vue";
             src="@/assets/img/pik.png"
             class="absolute object-cover w-20 h-20 p-2 transform -translate-x-1/2 -translate-y-1/2 rounded-full pik top-1/2 left-1/2"
           />
-
           <span class="relative z-10 uppercase text-lg">{{
             $t("order_work")
           }}</span>
@@ -72,6 +98,13 @@ import Networks from "./Networks.vue";
   z-index: -1;
 }
 
+.background-placeholder {
+  background-image: url("@/assets/img/bgImagePlaceholder.jpg"); /* Placeholder image */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
 .shadow-dark {
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
 }
@@ -84,6 +117,7 @@ import Networks from "./Networks.vue";
   background: url("@/assets/img/ramka2.png") center center no-repeat;
   background-size: cover;
 }
+
 .tr-3 {
   transition: 30s ease;
 }
