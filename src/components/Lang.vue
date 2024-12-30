@@ -4,8 +4,8 @@ import { useI18n } from "vue-i18n";
 
 const { locale } = useI18n();
 
-const changeLanguage = (lang) => {
-  locale.value = lang;
+const changeLanguage = () => {
+  locale.value = locale.value == "en" ? "ru" : "en";
   toggleShow();
 };
 
@@ -39,46 +39,118 @@ onUnmounted(() => {
 
 <template>
   <div
-    class="flex flex-col justify-end text-xl md:relative max-md:text-sm"
+    class="flex flex-col justify-end text-lg md:relative max-md:text-sm"
     ref="containerRef"
   >
-    <div
-      class="absolute flex gap-2 md:-left-[calc(200%+10px)] max-md:flex-col max-md:top-14 max-md:right-0"
-      v-if="show"
-    >
+    <transition name="dropdown" mode="out-in">
       <div
-        @click="changeLanguage('en')"
-        class="relative w-[74px] h-[74px] max-md:w-12.5 max-md:h-12.5 hover:cursor-pointer uppercase"
+        v-if="show"
+        class="absolute flex gap-2 md:-left-[calc(100%+10px)] max-md:flex-col max-md:top-14 max-md:right-0"
       >
-        <img src="@/assets/img/ramka2.png" class="w-[74px]" />
-        <span
-          class="absolute text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+        <div
+          @click="changeLanguage()"
+          class="relative w-[74px] group h-[74px] max-md:w-12.5 max-md:h-12.5 hover:cursor-pointer uppercase"
         >
-          <span class="absolute top-0.5 text-inner-shadow">En</span>
-        </span>
+          <img
+            src="@/assets/img/ramka.png"
+            class="w-[74px] max-md:w-12.5 group-hover:rotate-0 -rotate-90 transition-transform duration-300 ease-in-out"
+          />
+          <span
+            class="absolute text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+          >
+            <span class="absolute top-0.5 left-0.5 text-inner-shadow">
+              {{ locale == "en" ? "ru" : "en" }}
+            </span>
+          </span>
+        </div>
       </div>
-      <div
-        @click="changeLanguage('ru')"
-        class="relative w-[74px] h-[74px] max-md:w-12.5 max-md:h-12.5 hover:cursor-pointer uppercase"
-      >
-        <img src="@/assets/img/ramka2.png" class="w-[74px] max-md:w-12.5" />
-        <span
-          class="absolute text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-        >
-          <span class="absolute top-0.5 text-inner-shadow">Ru</span>
-        </span>
-      </div>
-    </div>
+    </transition>
     <div
-      class="relative w-[74px] h-[74px] max-md:w-12.5 max-md:h-12.5 hover:cursor-pointer uppercase"
+      class="relative w-[74px] h-[74px] max-md:w-12.5 max-md:h-12.5 group hover:cursor-pointer uppercase"
       @click="toggleShow"
     >
-      <img src="@/assets/img/ramka.png" class="w-[74px] max-md:w-12.5" />
+      <img
+        src="@/assets/img/ramka.png"
+        :class="`w-[74px] absolute -rotate-90 inset-0 group-hover:hidden max-md:w-12.5 transition-transform duration-500 ease-in-out ${
+          show ? 'animation-step-ramka hidden' : ''
+        }`"
+      />
+      <img
+        src="@/assets/img/ramka2.png"
+        :class="`w-[74px] absolute inset-0 group-hover:!flex max-md:w-12.5 transition-transform duration-500 ease-in-out ${
+          show ? 'animation-step-ramka2' : 'hidden'
+        }`"
+      />
       <span
         class="absolute text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
       >
-        <span class="pr-0.5 text-inner-shadow">{{ locale }}</span>
+        <span class="pl-0.5 pt-0.5 text-inner-shadow">{{ locale }}</span>
       </span>
     </div>
   </div>
 </template>
+
+<style scoped>
+@keyframes ramkaAnimation {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(45deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+@keyframes ramka2Animation {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    transform: rotate(-45deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotate(-90deg);
+    opacity: 1;
+  }
+}
+
+.animation-step-ramka {
+  animation: ramkaAnimation 0.3s ease-in-out forwards;
+}
+
+.animation-step-ramka2 {
+  animation: ramka2Animation 0.3s ease-in-out forwards;
+}
+
+.dropdown-enter-active,
+.dropdown-leave-active {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.dropdown-enter-from {
+  transform: translateY(-10px);
+  opacity: 0;
+}
+
+.dropdown-enter-to {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.dropdown-leave-from {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.dropdown-leave-to {
+  transform: translateY(-10px);
+  opacity: 0;
+}
+</style>

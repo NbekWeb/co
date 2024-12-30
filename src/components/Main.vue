@@ -7,8 +7,12 @@ import Networks from "./Networks.vue";
   <div
     class="flex flex-col justify-between w-full h-screen min-h-screen pb-20 main max-md:pb-5"
   >
+  <video class="background-video" autoplay loop muted>
+    <source src="@/assets/img/bgVideo.webm" type="video/webm">
+    Your browser does not support the video tag.
+  </video>
     <div
-      class="flex gap-5 pt-2.5 items-center overflow-x-hidden overflow-y-hidden max-lg:justify-center "
+      class="flex gap-5 pt-2.5 items-center overflow-x-hidden overflow-y-hidden max-lg:justify-center"
     >
       <img
         src="@/assets/img/leftarrow.png"
@@ -33,16 +37,13 @@ import Networks from "./Networks.vue";
           {{ $t("creative_art_direction") }}
         </p>
         <button
-          class="flex max-md:hidden text-2xl  group relative items-center justify-center h-18 w-[370px] text-white"
+          class="flex max-md:hidden order text-2xl group relative items-center justify-center h-18 w-[370px] text-white"
         >
           <img
-            src="@/assets/img/btn.png"
-            class="absolute top-0 object-cover w-full transition-opacity duration-300 rotate-180 group-hover:opacity-0"
+            src="@/assets/img/pik.png"
+            class="absolute object-cover w-20 h-20 p-2 transform -translate-x-1/2 -translate-y-1/2 rounded-full pik top-1/2 left-1/2"
           />
-          <img
-            src="@/assets/img/btn2.png"
-            class="absolute top-0 object-cover w-full transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-          />
+
           <span class="relative z-10">{{ $t("order_work") }}</span>
         </button>
       </div>
@@ -58,19 +59,17 @@ import Networks from "./Networks.vue";
 </template>
 
 <style lang="css">
-.main {
-  background: url("@/assets/img/fon.png") center center no-repeat;
-  background-size: cover;
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
-.text-inner-shadow {
-  z-index: 1000;
-  position: relative;
-  font-weight: bold;
-  background: url("@/assets/img/text.png") center center no-repeat;
-  background-size: cover;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+
 
 .shadow-dark {
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);

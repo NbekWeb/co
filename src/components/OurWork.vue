@@ -25,11 +25,17 @@ import Works from "./Works.vue";
       <div
         class="grid items-center grid-cols-3 gap-10 py-10 max-lg:grid-cols-1"
       >
-        <img src="@/assets/img/card.png" class="col-span-2 max-lg:col-span-1" />
+        <video
+          src="@/assets/img/gi.mp4"
+          class="col-span-2 max-lg:col-span-1 object-cover w-full h-full "
+          autoplay
+          loop
+          muted
+        ></video>
         <div class="flex flex-col items-center text-white/50 gap-7">
           <img src="@/assets/img/logo.png" class="h-24" />
-          <p class="2xl:text-2xl xl:text-base ">
-           {{ $t('text_1') }}
+          <p class="2xl:text-2xl xl:text-base">
+            {{ $t("text_1") }}
           </p>
         </div>
       </div>

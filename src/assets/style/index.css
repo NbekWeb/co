@@ -17,18 +17,106 @@
 }
 
 .icon {
-  background: url("@/assets/img/icon.png") center center no-repeat;
-  background-size: cover;
-  transition:  .3s ease;
+  transition: 0.3s ease;
+  animation: change-icon 600ms ease-in-out infinite alternate;
 }
 .icon:hover {
   background: url("@/assets/img/icon2.png") center center no-repeat;
   background-size: cover;
   transform: scale(1.1);
   cursor: pointer;
+  animation: none;
 }
 
-.col .flex-col{
+@keyframes change-icon {
+  0% {
+    background: url("@/assets/img/icon.png") center center no-repeat;
+    background-size: cover;
+  }
+  100% {
+    background: url("@/assets/img/icon3.png") center center no-repeat;
+    background-size: cover;
+  }
+}
+
+@keyframes change-btn {
+  0% {
+    background: url("@/assets/img/order1.png") center center no-repeat;
+    background-size: cover;
+  }
+  100% {
+    background: url("@/assets/img/order2.png") center center no-repeat;
+    background-size: cover;
+  }
+}
+
+@keyframes rotate-pik {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(60deg);
+  }
+}
+@keyframes rotate-pik-one {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(60deg);
+  }
+}
+
+.tr-3 {
+  transition: transform 3s ease;
+}
+
+.order:hover .pik {
+  animation: rotate-pik-one 300ms ease-in-out 1 alternate;
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.pik {
+  animation: rotate-pik 600ms ease-in-out infinite alternate;
+}
+
+.col .flex-col {
   flex-direction: row !important;
 }
 
+.order {
+  transition: 0.3s ease;
+  animation: change-btn 600ms ease-in-out infinite alternate;
+}
+
+.order:hover {
+  background: url("@/assets/img/order2.png") center center no-repeat;
+  background-size: cover;
+  animation: none;
+}
+
+.order:hover span {
+  text-shadow: 0px 0px 4px rgba(237, 68, 81, 1);
+}
+
+.shadow-red {
+  text-shadow: 0px 0px 4px rgba(237, 68, 81, 1);
+}
+
+.text-inner-shadow {
+  z-index: 1000;
+  position: relative;
+  font-weight: bold;
+  background: url("@/assets/img/text.png") center center no-repeat;
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.limit2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

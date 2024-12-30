@@ -22,8 +22,8 @@ import Networks from "./Networks.vue";
       />
     </div>
     <div class="mt-10 col">
-      <div class="flex justify-center">
-        <Networks class="" />
+      <div class="flex justify-center relative z-10">
+        <Networks />
       </div>
       <div class="pt-12.5 relative max-lg:pt-5">
         <img src="@/assets/img/el.png" class="absolute bottom-0 w-full" />
