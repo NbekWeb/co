@@ -18,11 +18,8 @@ const handleVideoLoad = () => {
   >
     <!-- Placeholder background until the video is loaded -->
     <div
-      v-bind:class="{
-        'background-placeholder': !isVideoLoaded,
-        'background-video': isVideoLoaded,
-      }"
-      class="absolute top-0 left-0 z-10 w-full h-full"
+     
+      class="absolute top-0 left-0 z-10 w-full h-full background-video"
     ></div>
 
     <!-- Background Video -->
@@ -96,12 +93,7 @@ const handleVideoLoad = () => {
   z-index: -1;
 }
 
-.background-placeholder {
-  background-image: url("@/assets/img/bgImagePlaceholder.jpg"); /* Placeholder image */
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-}
+
 
 .shadow-dark {
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
