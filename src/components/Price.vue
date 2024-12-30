@@ -26,7 +26,7 @@
           >
             <img
               src="@/assets/img/hex.png"
-              class="absolute top-0 left-0 h-full transition-opacity duration-300  group-hover:opacity-0 animation-hex"
+              class="absolute top-0 left-0 h-full transition-opacity duration-300 group-hover:opacity-0 animation-hex"
             />
             <img
               src="@/assets/img/hex2.png"
@@ -218,7 +218,7 @@
             />
             <img
               src="@/assets/img/hex2.png"
-              class="absolute  animation-hex-reverse top-0 left-0 h-full transition-opacity duration-300 scale-110 opacity-0 animation-hex-reverse"
+              class="absolute animation-hex-reverse top-0 left-0 h-full transition-opacity duration-300 scale-110 opacity-0 animation-hex-reverse"
             />
             <div class="flex flex-col items-center gap-1 text-white">
               <span class="text-lg text-center uppercase max-w-36">
@@ -262,7 +262,5 @@
 .animation-hex-reverse {
   animation: fade-out-in 2s infinite;
 }
-.hes:hover img {
-  animation: none;
-}
+
 </style>

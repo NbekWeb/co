@@ -83,7 +83,7 @@ const updateNavigationState = () => {
                 class="absolute bottom-1 left-4 text-white hidden group-hover:block hover:cursor-pointer"
               >
                 <div class="z-10 group relative max-w-max behance">
-                  <h3 class="text-2xl font-bold text-inner-shadow">
+                  <h3 class="text-3xl max-lg:txt-2xl font-bold text-inner-shadow">
                     Watch to Behance
                   </h3>
                   <div>

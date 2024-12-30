@@ -7,10 +7,10 @@ import Networks from "./Networks.vue";
   <div
     class="flex flex-col justify-between w-full h-screen min-h-screen pb-20 main max-md:pb-5"
   >
-  <video class="background-video" autoplay loop muted>
-    <source src="@/assets/img/bgVideo.webm" type="video/webm">
-    Your browser does not support the video tag.
-  </video>
+    <video class="background-video" autoplay loop muted>
+      <source src="@/assets/img/bgVideo.webm" type="video/webm" />
+      Your browser does not support the video tag.
+    </video>
     <div
       class="flex gap-5 pt-2.5 items-center overflow-x-hidden overflow-y-hidden max-lg:justify-center"
     >
@@ -44,7 +44,9 @@ import Networks from "./Networks.vue";
             class="absolute object-cover w-20 h-20 p-2 transform -translate-x-1/2 -translate-y-1/2 rounded-full pik top-1/2 left-1/2"
           />
 
-          <span class="relative z-10">{{ $t("order_work") }}</span>
+          <span class="relative z-10 uppercase text-lg">{{
+            $t("order_work")
+          }}</span>
         </button>
       </div>
       <div
@@ -69,7 +71,6 @@ import Networks from "./Networks.vue";
   transform: translate(-50%, -50%);
   z-index: -1;
 }
-
 
 .shadow-dark {
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
