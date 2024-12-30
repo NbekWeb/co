@@ -25,6 +25,7 @@
         <div
           class="absolute flex flex-col items-center w-full text-center transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
         >
+        
           <span class="text-5xl uppercase text-inner-shadow max-2xl:text-3xl">{{
             $t("Interface")
           }}</span>
