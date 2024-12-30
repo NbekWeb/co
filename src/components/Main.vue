@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue';
+import { ref } from "vue";
 import Lang from "./Lang.vue";
 import Networks from "./Networks.vue";
 
@@ -20,9 +20,9 @@ const handleVideoLoad = () => {
     <div
       v-bind:class="{
         'background-placeholder': !isVideoLoaded,
-        'background-video': isVideoLoaded
+        'background-video': isVideoLoaded,
       }"
-      class="absolute top-0 left-0 w-full h-full z-10"
+      class="absolute top-0 left-0 z-10 w-full h-full"
     ></div>
 
     <!-- Background Video -->
@@ -70,9 +70,7 @@ const handleVideoLoad = () => {
             src="@/assets/img/pik.png"
             class="absolute object-cover w-20 h-20 p-2 transform -translate-x-1/2 -translate-y-1/2 rounded-full pik top-1/2 left-1/2"
           />
-          <span class="relative z-10 uppercase text-lg">{{
-            $t("order_work")
-          }}</span>
+          <span class="relative z-10 uppercase">{{ $t("order_work") }}</span>
         </button>
       </div>
       <div
