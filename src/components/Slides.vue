@@ -80,28 +80,30 @@ const updateNavigationState = () => {
             <div v-for="(item, j) in slide" :key="j" class="relative group">
               <img :src="item" class="w-full" />
               <div
-                class="absolute bottom-1 left-4 text-white hidden group-hover:block hover:cursor-pointer"
+                class="absolute text-white transition-opacity opacity-0 bottom-1 left-4 group-hover:opacity-100 hover:cursor-pointer"
               >
-                <div class="z-10 group relative max-w-max behance">
-                  <h3 class="text-3xl max-lg:txt-2xl font-bold text-inner-shadow">
+                <div class="relative z-10 group max-w-max behance">
+                  <h3
+                    class="text-3xl relative z-[100] font-bold max-lg:txt-2xl text-inner-shadow"
+                  >
                     Watch to Behance
                   </h3>
                   <div>
                     <img
                       src="@/assets/img/li.png"
-                      class="w-full h-8 object-cover group-hover:opacity-0 absolute -top-1/2 transform translate-y-1/2 image-switch"
+                      class="absolute object-cover w-full h-8 transform translate-y-1/2 group-hover:opacity-0 -top-1/2 image-switch"
                     />
                     <img
                       src="@/assets/img/li1.png"
-                      class="w-full h-8 object-cover group-hover:opacity-0 absolute -top-1/2 transform translate-y-1/2 image-switch"
+                      class="absolute object-cover w-full h-8 transform translate-y-1/2 group-hover:opacity-0 -top-1/2 image-switch"
                     />
                     <img
                       src="@/assets/img/li2.png"
-                      class="w-full h-8 group-hover:opacity-100 opacity-0 absolute -top-1/2 transform translate-y-1/2 image-switch"
+                      class="absolute w-full h-8 transform translate-y-1/2 opacity-0 group-hover:opacity-100 -top-1/2 image-switch"
                     />
                   </div>
                 </div>
-                <p class="text-sm text-white/50 mt-2 limit2">
+                <p class="mt-2 text-sm text-white/50 limit2">
                   Logo design for lineage 2 project в песочном стиле и
                   иероглифами, что подчёркивает египетские времена
                 </p>
@@ -175,11 +177,11 @@ const updateNavigationState = () => {
 @keyframes switchImages {
   0%,
   50% {
-    opacity: 0.7;
+    opacity: .4;
   }
   51%,
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 

@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <div class="py-20">
+  <div class="pt-20">
     <div
       class="flex gap-5 pt-2.5 items-center overflow-x-hidden overflow-y-hidden max-lg:justify-center max-lg:mt-5"
     >
@@ -18,11 +18,11 @@
         class="w-[calc(50%-60px)] max-lg:hidden"
       />
     </div>
-    <div>
+    <div class="relative mx-auto max-w-max py-25 max-lg:py-15">
       <div class="flex flex-col items-center max-lg:hidden">
         <div class="flex gap-7 mt-25">
           <div
-            class="relative flex hes items-center justify-center group h-78 min-w-70"
+            class="relative flex items-center justify-center hes group h-78 min-w-70 hex1"
           >
             <img
               src="@/assets/img/hex.png"
@@ -30,7 +30,7 @@
             />
             <img
               src="@/assets/img/hex2.png"
-              class="absolute top-0 left-0 h-full transition-opacity duration-300 scale-110 opacity-0 group-hover:opacity-100 animation-hex-reverse"
+              class="absolute top-0 left-0 h-full transition-opacity duration-300 opacity-0 group-hover:opacity-100 animation-hex-reverse"
             />
             <div class="flex flex-col items-center gap-1 text-white">
               <span class="text-3xl text-center uppercase max-w-56">
@@ -42,15 +42,15 @@
             </div>
           </div>
           <div
-            class="relative hes flex items-center justify-center group h-78 min-w-70"
+            class="relative flex items-center justify-center hes group h-78 min-w-70"
           >
             <img
               src="@/assets/img/hex.png"
-              class="absolute top-0 left-0 animation-hex h-full transition-opacity duration-300 group-hover:opacity-0"
+              class="absolute top-0 left-0 h-full transition-opacity duration-300 animation-hex group-hover:opacity-0"
             />
             <img
               src="@/assets/img/hex2.png"
-              class="absolute top-0 left-0 animation-hex-reverse h-full transition-opacity duration-300 scale-110 opacity-0 group-hover:opacity-100"
+              class="absolute top-0 left-0 h-full transition-opacity duration-300 opacity-0 animation-hex-reverse group-hover:opacity-100"
             />
             <div class="flex flex-col items-center gap-1 text-white">
               <span class="text-3xl text-center uppercase max-w-56">
@@ -62,15 +62,15 @@
             </div>
           </div>
           <div
-            class="relative hes flex items-center justify-center group h-78 min-w-70"
+            class="relative flex items-center justify-center hes group h-78 min-w-70"
           >
             <img
               src="@/assets/img/hex.png"
-              class="absolute animation-hex top-0 left-0 h-full transition-opacity duration-300 group-hover:opacity-0"
+              class="absolute top-0 left-0 h-full transition-opacity duration-300 animation-hex group-hover:opacity-0"
             />
             <img
               src="@/assets/img/hex2.png"
-              class="absolute top-0 left-0 animation-hex-reverse h-full transition-opacity duration-300 scale-110 opacity-0 group-hover:opacity-100"
+              class="absolute top-0 left-0 h-full transition-opacity duration-300 opacity-0 animation-hex-reverse group-hover:opacity-100"
             />
             <div class="flex flex-col items-center gap-1 text-white">
               <span class="text-3xl text-center uppercase max-w-56">
@@ -84,15 +84,15 @@
         </div>
         <div class="flex -mt-10 gap-7">
           <div
-            class="relative hes flex items-center justify-center group h-78 min-w-70"
+            class="relative flex items-center justify-center hes group h-78 min-w-70"
           >
             <img
               src="@/assets/img/hex.png"
-              class="absolute animation-hex top-0 left-0 h-full transition-opacity duration-300 group-hover:opacity-0"
+              class="absolute top-0 left-0 h-full transition-opacity duration-300 animation-hex group-hover:opacity-0"
             />
             <img
               src="@/assets/img/hex2.png"
-              class="absolute top-0 left-0 animation-hex-reverse h-full transition-opacity duration-300 scale-110 opacity-0 group-hover:opacity-100"
+              class="absolute top-0 left-0 h-full transition-opacity duration-300 opacity-0 animation-hex-reverse group-hover:opacity-100"
             />
             <div class="flex flex-col items-center gap-1 text-white">
               <span class="text-3xl text-center uppercase max-w-56">
@@ -104,15 +104,15 @@
             </div>
           </div>
           <div
-            class="relative hes flex items-center justify-center group h-78 min-w-70"
+            class="relative flex items-center justify-center hes group h-78 min-w-70"
           >
             <img
               src="@/assets/img/hex.png"
-              class="absolute animation-hex top-0 left-0 h-full transition-opacity duration-300 group-hover:opacity-0"
+              class="absolute top-0 left-0 h-full transition-opacity duration-300 animation-hex group-hover:opacity-0"
             />
             <img
               src="@/assets/img/hex2.png"
-              class="absolute top-0 animation-hex-reverse left-0 h-full transition-opacity duration-300 scale-110 opacity-0 group-hover:opacity-100"
+              class="absolute top-0 left-0 h-full transition-opacity duration-300 opacity-0 animation-hex-reverse group-hover:opacity-100"
             />
             <div class="flex flex-col items-center gap-1 text-white">
               <span class="text-3xl text-center uppercase max-w-56">
@@ -125,18 +125,18 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col items-center lg:hidden">
+      <div class="flex flex-col items-center px-4 lg:hidden">
         <div class="flex gap-7 mt-15">
           <div
             class="relative hes flex items-center justify-center group h-[168px] min-w-[150px]"
           >
             <img
               src="@/assets/img/hex.png"
-              class="absolute animation-hex top-0 left-0 h-full transition-opacity duration-300 group-hover:opacity-0"
+              class="absolute top-0 left-0 h-full transition-opacity duration-300 animation-hex group-hover:opacity-0"
             />
             <img
               src="@/assets/img/hex2.png"
-              class="absolute animation-hex-reverse top-0 left-0 h-full transition-opacity duration-300 scale-110 opacity-0 group-hover:opacity-100"
+              class="absolute top-0 left-0 h-full transition-opacity duration-300 opacity-0 animation-hex-reverse group-hover:opacity-100"
             />
             <div class="flex flex-col items-center gap-1 text-white">
               <span class="text-lg text-center uppercase max-w-36">
@@ -152,11 +152,11 @@
           >
             <img
               src="@/assets/img/hex.png"
-              class="absolute animation-hex top-0 left-0 h-full transition-opacity duration-300 group-hover:opacity-0"
+              class="absolute top-0 left-0 h-full transition-opacity duration-300 animation-hex group-hover:opacity-0"
             />
             <img
               src="@/assets/img/hex2.png"
-              class="absolute animation-hex-reverse top-0 left-0 h-full transition-opacity duration-300 scale-110 opacity-0 group-hover:opacity-100"
+              class="absolute top-0 left-0 h-full transition-opacity duration-300 opacity-0 animation-hex-reverse group-hover:opacity-100"
             />
             <div class="flex flex-col items-center gap-1 text-white">
               <span class="text-lg text-center uppercase max-w-36">
@@ -173,11 +173,11 @@
         >
           <img
             src="@/assets/img/hex.png"
-            class="absolute animation-hex top-0 left-0 h-full transition-opacity duration-300 group-hover:opacity-0"
+            class="absolute top-0 left-0 h-full transition-opacity duration-300 animation-hex group-hover:opacity-0"
           />
           <img
             src="@/assets/img/hex2.png"
-            class="absolute animation-hex-reverse top-0 left-0 h-full transition-opacity duration-300 scale-110 opacity-0 group-hover:opacity-100"
+            class="absolute top-0 left-0 h-full transition-opacity duration-300 opacity-0 animation-hex-reverse group-hover:opacity-100"
           />
           <div class="flex flex-col items-center gap-1 text-white">
             <span class="text-lg text-center uppercase max-w-36">
@@ -194,11 +194,11 @@
           >
             <img
               src="@/assets/img/hex.png"
-              class="absolute animation-hex top-0 left-0 h-full transition-opacity duration-300 group-hover:opacity-0"
+              class="absolute top-0 left-0 h-full transition-opacity duration-300 animation-hex group-hover:opacity-0"
             />
             <img
               src="@/assets/img/hex2.png"
-              class="absolute animation-hex-reverse top-0 left-0 h-full transition-opacity duration-300 scale-110 opacity-0 group-hover:opacity-100"
+              class="absolute top-0 left-0 h-full transition-opacity duration-300 opacity-0 animation-hex-reverse group-hover:opacity-100"
             />
             <div class="flex flex-col items-center gap-1 text-white">
               <span class="text-lg text-center uppercase max-w-36">
@@ -214,11 +214,11 @@
           >
             <img
               src="@/assets/img/hex.png"
-              class="absolute animation-hex top-0 left-0 h-full transition-opacity duration-300 animation-hex"
+              class="absolute top-0 left-0 h-full transition-opacity duration-300 animation-hex"
             />
             <img
               src="@/assets/img/hex2.png"
-              class="absolute animation-hex-reverse top-0 left-0 h-full transition-opacity duration-300 scale-110 opacity-0 animation-hex-reverse"
+              class="absolute top-0 left-0 h-full transition-opacity duration-300 opacity-0 animation-hex-reverse"
             />
             <div class="flex flex-col items-center gap-1 text-white">
               <span class="text-lg text-center uppercase max-w-36">
@@ -230,6 +230,11 @@
             </div>
           </div>
         </div>
+      </div>
+      <div
+        class="absolute w-full transform -translate-x-1/2 top-4 left-1/2 max-lg:top-1/2 max-lg:-translate-y-1/2"
+      >
+        <img src="@/assets/img/pict.png" class="w-full mt-10" />
       </div>
     </div>
   </div>
@@ -262,5 +267,4 @@
 .animation-hex-reverse {
   animation: fade-out-in 2s infinite;
 }
-
 </style>
