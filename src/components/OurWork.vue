@@ -2,7 +2,7 @@
 import Works from "./Works.vue";
 </script>
 <template>
-  <div class="pt-50">
+  <div class="pt-32 max-lg:pt-15">
     <div
       class="flex gap-5 pt-2.5 items-center overflow-x-hidden overflow-y-hidden max-lg:justify-center max-lg:mt-5"
     >
@@ -15,6 +15,7 @@ import Works from "./Works.vue";
       >
         {{ $t("our_work") }}
       </div>
+      
       <img
         src="@/assets/img/arrow.png"
         class="w-[calc(50%-180px)] max-lg:hidden"

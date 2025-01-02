@@ -14,11 +14,10 @@ const handleVideoLoad = () => {
 
 <template>
   <div
-    class="flex flex-col justify-between w-full h-full min-h-screen pb-20 main max-md:pb-5"
+    class="flex flex-col justify-between w-full h-screen min-h-screen pb-20 main max-md:pb-5"
   >
     <!-- Placeholder background until the video is loaded -->
     <div
-     
       class="absolute top-0 left-0 z-10 w-full h-full background-video"
     ></div>
 
@@ -36,7 +35,7 @@ const handleVideoLoad = () => {
     </video>
 
     <div
-      class="flex gap-5 pt-2.5 items-center overflow-x-hidden overflow-y-hidden max-lg:justify-center"
+      class="flex  min-h-max gap-5 pt-2.5 items-center overflow-x-hidden overflow-y-hidden max-lg:justify-center"
     >
       <img
         src="@/assets/img/leftarrow.png"
@@ -52,9 +51,9 @@ const handleVideoLoad = () => {
       </div>
     </div>
     <div
-      class="flex justify-between flex-grow px-25 max-lg:px-5 max-md:flex-col max-md:justify-end"
+      class="flex justify-between flex-grow px-25 max-lg:px-5 max-md:flex-col max-md:justify-end "
     >
-      <div class="flex flex-col justify-end gap-11">
+      <div class="flex flex-col justify-end gap-11 ">
         <p
           class="text-inner-shadow font-semibold text-3xl max-w-[620px] uppercase max-md:max-w-full max-md:text-xl max-md:text-center"
         >
@@ -92,8 +91,6 @@ const handleVideoLoad = () => {
   transform: translate(-50%, -50%);
   z-index: -1;
 }
-
-
 
 .shadow-dark {
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
