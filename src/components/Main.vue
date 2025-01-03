@@ -16,12 +16,7 @@ const handleVideoLoad = () => {
   <div
     class="relative flex flex-col justify-between w-full h-screen min-h-screen pb-20 bg-black main max-md:pb-5"
   >
-    <!-- Placeholder background until the video is loaded -->
-    <div
-      class="absolute top-0 left-0 z-10 w-full h-full background-video"
-    ></div>
-
-    <!-- Background Video -->
+  
     <video
       class="background-video"
       autoplay
@@ -46,9 +41,9 @@ const handleVideoLoad = () => {
         src="@/assets/img/arrow.png"
         class="w-[calc(50%-123px)] max-lg:hidden"
       />
-      <div class="absolute md:hidden right-5">
-        <Lang />
-      </div>
+    </div>
+    <div class="absolute z-[100]  md:hidden right-5 top-5">
+      <Lang />
     </div>
     <div
       class="flex relative z-[2] justify-between flex-grow px-25 max-lg:px-5 max-md:flex-col max-md:justify-end"
@@ -74,7 +69,7 @@ const handleVideoLoad = () => {
       >
         <span class="max-md:hidden"></span>
         <Networks class="absolute transform -translate-y-1/2 top-1/2" />
-        <Lang class="max-md:hidden" />
+        <Lang class="max-md:hidden"  />
       </div>
     </div>
   </div>
