@@ -18,14 +18,13 @@
       />
     </div>
     <div
-      class="grid justify-center grid-cols-3 gap-10 mt-25 max-xl:gap-5 2xl:px-20 max-2xl:px-10 max-lg:grid-cols-2 max-lg:place-items-center max-sm:grid-cols-1 max-md:px-0"
+      class="grid justify-center grid-cols-3 gap-10 mt-25 max-xl:gap-5 2xl:px-20 max-2xl:px-10 max-lg:grid-cols-1 max-lg:place-items-center max-md:px-0 "
     >
-      <div class="relative">
+      <div class="relative max-lg:max-w-[450px]">
         <img src="@/assets/img/p1.png" class="h-full" />
         <div
           class="absolute flex flex-col items-center w-full text-center transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
         >
-        
           <span class="text-5xl uppercase text-inner-shadow max-2xl:text-3xl">{{
             $t("Interface")
           }}</span>
@@ -37,7 +36,7 @@
           >
         </div>
       </div>
-      <div class="relative">
+      <div class="relative max-lg:max-w-[450px]">
         <img src="@/assets/img/p2.png" class="h-full" />
         <div
           class="absolute flex flex-col items-center w-full text-center transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
@@ -53,7 +52,7 @@
           >
         </div>
       </div>
-      <div class="relative">
+      <div class="relative max-lg:max-w-[450px]">
         <img src="@/assets/img/p3.png" class="h-full" />
         <div
           class="absolute flex flex-col items-center w-full text-center transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"

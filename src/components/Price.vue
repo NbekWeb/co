@@ -2,7 +2,7 @@
 <template>
   <div class="pt-20">
     <div
-      class="flex gap-5 pt-2.5 items-center overflow-x-hidden overflow-y-hidden max-lg:justify-center max-lg:mt-5"
+      class="flex px-25 max-lg:px-5 gap-5 pt-2.5 items-center overflow-x-hidden overflow-y-hidden max-lg:justify-center max-lg:mt-5"
     >
       <img
         src="@/assets/img/leftarrow.png"

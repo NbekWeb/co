@@ -49,7 +49,7 @@ onUnmounted(() => {
       >
         <div
           @click="changeLanguage()"
-          class="relative w-[74px] group h-[74px] max-md:w-12.5 max-md:h-12.5 hover:cursor-pointer uppercase"
+          class="relative w-[74px]  group h-[74px] max-md:w-12.5 max-md:h-12.5 hover:cursor-pointer uppercase"
         >
           <img
             src="@/assets/img/ramka.png"
@@ -58,7 +58,7 @@ onUnmounted(() => {
           <span
             class="absolute text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
           >
-            <span class="absolute top-0.5 left-0.5 text-inner-shadow">
+            <span class=" text-inner-shadow pt-0.5 pl-0.5">
               {{ locale == "en" ? "ru" : "en" }}
             </span>
           </span>

@@ -14,7 +14,7 @@ const handleVideoLoad = () => {
 
 <template>
   <div
-    class="flex flex-col justify-between w-full h-screen min-h-screen pb-20 main max-md:pb-5"
+    class="relative flex flex-col justify-between w-full h-screen min-h-screen pb-20 bg-black main max-md:pb-5"
   >
     <!-- Placeholder background until the video is loaded -->
     <div
@@ -35,7 +35,7 @@ const handleVideoLoad = () => {
     </video>
 
     <div
-      class="flex  min-h-max gap-5 pt-2.5 items-center overflow-x-hidden overflow-y-hidden max-lg:justify-center"
+      class="flex px-25 max-lg:px-5  relative z-[2]  min-h-max gap-5 pt-2.5 items-center overflow-x-hidden overflow-y-hidden max-lg:justify-center"
     >
       <img
         src="@/assets/img/leftarrow.png"
@@ -51,9 +51,9 @@ const handleVideoLoad = () => {
       </div>
     </div>
     <div
-      class="flex justify-between flex-grow px-25 max-lg:px-5 max-md:flex-col max-md:justify-end "
+      class="flex relative z-[2] justify-between flex-grow px-25 max-lg:px-5 max-md:flex-col max-md:justify-end"
     >
-      <div class="flex flex-col justify-end gap-11 ">
+      <div class="flex flex-col justify-end gap-11">
         <p
           class="text-inner-shadow font-semibold text-3xl max-w-[620px] uppercase max-md:max-w-full max-md:text-xl max-md:text-center"
         >
@@ -73,7 +73,7 @@ const handleVideoLoad = () => {
         class="flex flex-col justify-between gap-10 md:h-full max-md:flex-row max-md:justify-center max-md:mt-5"
       >
         <span class="max-md:hidden"></span>
-        <Networks />
+        <Networks class="absolute transform -translate-y-1/2 top-1/2" />
         <Lang class="max-md:hidden" />
       </div>
     </div>
@@ -89,7 +89,7 @@ const handleVideoLoad = () => {
   height: 100%;
   object-fit: cover;
   transform: translate(-50%, -50%);
-  z-index: -1;
+  z-index: 1;
 }
 
 .shadow-dark {

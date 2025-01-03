@@ -55,7 +55,7 @@ const updateNavigationState = () => {
     >
       <img src="@/assets/img/nav.png" class="w-7" />
     </button>
-    <div class="px-20 max-md:px-10">
+    <div class="px-20 max-md:px-10 max-sm:px-0">
       <Swiper
         :modules="[Navigation, Pagination, Autoplay]"
         :navigation="{
@@ -80,7 +80,7 @@ const updateNavigationState = () => {
             <div v-for="(item, j) in slide" :key="j" class="relative group">
               <img :src="item" class="w-full" />
               <div
-                class="absolute text-white transition-opacity opacity-0 bottom-1 left-4 group-hover:opacity-100 hover:cursor-pointer"
+                class="absolute text-white opacity-0 bottom-1 b1 left-4 group-hover:opacity-100 hover:cursor-pointer"
               >
                 <div class="relative z-10 group max-w-max behance">
                   <h3
@@ -88,18 +88,18 @@ const updateNavigationState = () => {
                   >
                     Watch to Behance
                   </h3>
-                  <div>
+                  <div class="">
                     <img
                       src="@/assets/img/li.png"
-                      class="absolute object-cover w-full h-8 transform translate-y-1/2 group-hover:opacity-0 -top-1/2 image-switch"
+                      class="absolute object-cover w-full h-8 group-hover:opacity-0 -top-1/2 image-switch"
                     />
                     <img
                       src="@/assets/img/li1.png"
-                      class="absolute object-cover w-full h-8 transform translate-y-1/2 group-hover:opacity-0 -top-1/2 image-switch"
+                      class="absolute object-cover w-full h-8 transform translate-y-1/2 rounded-t-full group-hover:opacity-0 -top-1/2 image-switch"
                     />
                     <img
                       src="@/assets/img/li2.png"
-                      class="absolute w-full h-8 transform translate-y-1/2 opacity-0 group-hover:opacity-100 -top-1/2 image-switch"
+                      class="absolute z-10 w-full h-8 transform translate-y-1/2 rounded-t-full opacity-0 group-hover:opacity-100 -top-1/2 image-switch"
                     />
                   </div>
                 </div>
@@ -120,6 +120,10 @@ const updateNavigationState = () => {
 .swiper {
   width: 100%;
   height: 100%;
+}
+
+.b1 {
+  transition: 0.6s ease;
 }
 
 .swiper-slide {
@@ -177,7 +181,7 @@ const updateNavigationState = () => {
 @keyframes switchImages {
   0%,
   50% {
-    opacity: .4;
+    opacity: 0.4;
   }
   51%,
   100% {
@@ -194,5 +198,8 @@ const updateNavigationState = () => {
 }
 .behance:hover img {
   animation: none;
+}
+.behance:hover .image-switch {
+  animation-play-state: paused; /* Pause animation on hover */
 }
 </style>
