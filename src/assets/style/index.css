@@ -19,12 +19,15 @@
 .icon {
   transition: 0.3s ease;
   animation: change-icon 600ms ease-in-out infinite alternate;
+ 
+  
 }
 .icon:hover {
   background: url("@/assets/img/icon2.png") center center no-repeat;
   background-size: cover;
   cursor: pointer;
   animation: none;
+
 }
 
 @keyframes change-icon {
