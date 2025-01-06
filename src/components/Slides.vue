@@ -78,7 +78,7 @@ const updateNavigationState = () => {
             class="grid grid-cols-3 gap-5 max-md:grid-cols-2 max-sm:grid-cols-1"
           >
             <div v-for="(item, j) in slide" :key="j" class="relative group">
-              <img :src="item" class="w-full" />
+              <img :src="item" class="w-full b1 group-hover:scale-125" />
               <div
                 class="absolute text-white opacity-0 bottom-1 b1 left-4 group-hover:opacity-100 hover:cursor-pointer"
               >

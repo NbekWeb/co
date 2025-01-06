@@ -28,7 +28,7 @@ const changeSelect = (i) => {
         :key="i"
         :class="`${
           selected == i ? 'text-work' : 'text-grey'
-        } '  relative  flex group    hover:cursor-pointer  group text-center '`"
+        } '  relative  flex group    hover:cursor-pointer  group text-center  '`"
         @click="changeSelect(i)"
       >
         <span class="flex justify-center min-w-25">
