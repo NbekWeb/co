@@ -123,7 +123,7 @@ const updateNavigationState = () => {
 }
 
 .b1 {
-  transition: 0.6s ease;
+  transition: 2s ease;
 }
 
 .swiper-slide {

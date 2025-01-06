@@ -12,7 +12,10 @@
     />
     <img src="@/assets/img/righth.png" class="h-full" />
     <div class="absolute z-[10] bottom-3 left-0 px-3">
-      <img src="@/assets/img/lighh.png" class="object-cover w-full h-3 rounded-t-full" />
+      <img
+        src="@/assets/img/lighh.png"
+        class="object-cover w-full h-3 rounded-t-full"
+      />
     </div>
   </div>
 </template>

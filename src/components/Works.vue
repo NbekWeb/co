@@ -35,7 +35,7 @@ const changeSelect = (i) => {
           {{ $t(select) }}
         </span>
         <tagline
-          class="opacity-0 group-hover:opacity-100"
+          class="opacity-0 group-hover:opacity-100 b1"
           v-if="selected != i"
         />
         <taglinea v-else />
