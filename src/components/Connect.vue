@@ -22,7 +22,7 @@ import Networks from "./Networks.vue";
       />
     </div>
     <div class="mt-10 col">
-      <div class="flex justify-center relative z-10">
+      <div class="relative z-10 flex justify-center">
         <Networks />
       </div>
       <div class="pt-12.5 relative max-lg:pt-5">

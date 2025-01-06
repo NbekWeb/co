@@ -16,7 +16,6 @@ const handleVideoLoad = () => {
   <div
     class="relative flex flex-col justify-between w-full h-screen min-h-screen pb-20 bg-black main max-md:pb-5"
   >
-  
     <video
       class="background-video"
       autoplay
@@ -30,7 +29,7 @@ const handleVideoLoad = () => {
     </video>
 
     <div
-      class="flex px-25 max-lg:px-5  relative z-[2]  min-h-max gap-5 pt-2.5 items-center overflow-x-hidden overflow-y-hidden max-lg:justify-center"
+      class="flex px-25 max-lg:px-5 relative z-[2] min-h-max gap-5 pt-2.5 items-center overflow-x-hidden overflow-y-hidden max-lg:justify-center"
     >
       <img
         src="@/assets/img/leftarrow.png"
@@ -42,7 +41,7 @@ const handleVideoLoad = () => {
         class="w-[calc(50%-123px)] max-lg:hidden"
       />
     </div>
-    <div class="absolute z-[100]  md:hidden right-5 top-5">
+    <div class="absolute z-[100] md:hidden right-5 top-5">
       <Lang />
     </div>
     <div
@@ -54,6 +53,9 @@ const handleVideoLoad = () => {
         >
           {{ $t("creative_art_direction") }}
         </p>
+        <div class="flex justify-center md:hidden">
+          <Networks />
+        </div>
         <button
           class="flex max-md:hidden order text-2xl group relative items-center justify-center h-18 w-[370px] text-white"
         >
@@ -65,11 +67,11 @@ const handleVideoLoad = () => {
         </button>
       </div>
       <div
-        class="flex flex-col justify-between gap-10 md:h-full max-md:flex-row max-md:justify-center max-md:mt-5"
+        class="flex flex-col justify-between gap-10 max-md:hidden md:h-full max-md:flex-row max-md:justify-center max-md:mt-5"
       >
-        <span class="max-md:hidden"></span>
+        <span class=""></span>
         <Networks class="absolute transform -translate-y-1/2 top-1/2" />
-        <Lang class="max-md:hidden"  />
+        <Lang class="" />
       </div>
     </div>
   </div>
