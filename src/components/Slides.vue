@@ -77,7 +77,11 @@ const updateNavigationState = () => {
           <div
             class="grid grid-cols-3 gap-5 max-md:grid-cols-2 max-sm:grid-cols-1"
           >
-            <div v-for="(item, j) in slide" :key="j" class="relative h-full overflow-hidden group">
+            <div
+              v-for="(item, j) in slide"
+              :key="j"
+              class="relative h-full overflow-hidden group"
+            >
               <img
                 :src="item"
                 class="object-cover w-full max-w-full max-h-full b1 group-hover:scale-110"
@@ -188,7 +192,7 @@ const updateNavigationState = () => {
   }
   51%,
   100% {
-    opacity: 1;
+    opacity: 0.4;
   }
 }
 

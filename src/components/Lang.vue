@@ -49,11 +49,11 @@ onUnmounted(() => {
       >
         <div
           @click="changeLanguage()"
-          class="relative w-[74px] z-[10] group h-[74px] max-md:w-12.5 max-md:h-12.5 hover:cursor-pointer uppercase"
+          class="relative w-[74px]  z-[10] group h-[74px] max-md:w-12.5 max-md:h-12.5 hover:cursor-pointer uppercase"
         >
           <img
             src="@/assets/img/ramka.png"
-            class="w-[74px] max-md:w-12.5 group-hover:rotate-0 -rotate-90 transition-transform duration-300 ease-in-out"
+            class="w-[74px]  max-md:w-12.5 group-hover:rotate-0 -rotate-90 transition-transform duration-300 ease-in-out"
           />
           <span
             class="absolute text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
@@ -66,18 +66,18 @@ onUnmounted(() => {
       </div>
     </transition>
     <div
-      class="relative w-[74px] h-[74px] max-md:w-12.5 max-md:h-12.5 group hover:cursor-pointer uppercase"
+      class="relative w-[74px]   h-[74px] max-md:w-12.5 max-md:h-12.5 group hover:cursor-pointer uppercase"
       @click="toggleShow"
     >
       <img
         src="@/assets/img/ramka.png"
-        :class="`w-[74px] absolute -rotate-90 inset-0 group-hover:hidden max-md:w-12.5 transition-transform duration-500 ease-in-out ${
+        :class="`w-[74px]  absolute -rotate-90 inset-0 group-hover:hidden max-md:w-12.5 transition-transform duration-500 ease-in-out ${
           show ? 'animation-step-ramka hidden' : ''
         }`"
       />
       <img
         src="@/assets/img/ramka2.png"
-        :class="`w-[74px] absolute inset-0 group-hover:!flex max-md:w-12.5 transition-transform duration-500 ease-in-out ${
+        :class="`w-[74px] scale-[150%] ml-[2px] inset-0 group-hover:!flex max-md:w-12.5 transition-transform duration-500 ease-in-out ${
           show ? 'animation-step-ramka2' : 'hidden'
         }`"
       />
@@ -112,11 +112,13 @@ onUnmounted(() => {
     opacity: 0;
   }
   50% {
-    transform: rotate(-45deg);
+    transform: scale(1.5) rotate(-45deg);
     opacity: 0.5;
   }
   100% {
-    transform: rotate(-90deg);
+    transform:scale(1.5) rotate(-90deg);
+    margin-left: -0px;
+    margin-top: -1px;
     opacity: 1;
   }
 }

@@ -9,16 +9,16 @@ import Networks from "./Networks.vue";
     >
       <img
         src="@/assets/img/leftarrow.png"
-        class="w-[calc(50%-220px)] max-lg:hidden"
+        class="w-[calc(50%-290px)] max-lg:hidden"
       />
       <div
-        class="flex justify-center flex-grow min-h-full pt-3 text-3xl font-semibold uppercase max-lg:text-2xl text-inner-shadow"
+        class="flex justify-center flex-grow min-h-full pt-3 text-4xl font-semibold uppercase max-lg:text-2xl text-inner-shadow"
       >
         {{ $t("LetsWorkTogether") }}
       </div>
       <img
         src="@/assets/img/arrow.png"
-        class="w-[calc(50%-220px)] max-lg:hidden"
+        class="w-[calc(50%-290px)] max-lg:hidden"
       />
     </div>
     <div class="mt-10 col">
