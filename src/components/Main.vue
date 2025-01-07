@@ -17,7 +17,7 @@ const handleVideoLoad = () => {
     class="relative flex flex-col justify-between w-full h-screen min-h-screen pb-20 bg-black main max-md:pb-5"
   >
     <video
-      class="background-video"
+      class=" background-video"
       autoplay
       loop
       muted
