@@ -82,7 +82,7 @@ const handleVideoLoad = () => {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   object-fit: cover;
   transform: translate(-50%, -50%);
