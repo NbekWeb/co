@@ -23,7 +23,7 @@ const handleClickOutside = (event) => {
 };
 
 const handleScroll = () => {
-  show.value = false; // Hide the dropdown when scrolling
+  show.value = false; 
 };
 
 onMounted(() => {

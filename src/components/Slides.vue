@@ -6,25 +6,22 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
-// Import images
 import S1 from "@/assets/img/s1.png";
 import S3 from "@/assets/img/s3.png";
 import S4 from "@/assets/img/s4.png";
 import S6 from "@/assets/img/s6.png";
 
-// Correct slides array structure
+
 const slides = [
   [S1, S1, S3, S4, S4, S6],
   [S1, S1, S3, S4, S4, S6],
   [S1, S1, S3, S4, S4, S6],
   [S1, S1, S3, S4, S4, S6],
 ];
-
-// Reactive state for navigation button disable
 const isPrevDisabled = ref(true);
 const isNextDisabled = ref(false);
 
-// Swiper instance to control state
+
 let swiperInstance = null;
 
 const onSwiperInit = (swiper) => {
@@ -32,7 +29,6 @@ const onSwiperInit = (swiper) => {
   updateNavigationState();
 };
 
-// Update navigation button state based on Swiper state
 const updateNavigationState = () => {
   if (swiperInstance) {
     isPrevDisabled.value = swiperInstance.isBeginning;
@@ -159,12 +155,12 @@ const updateNavigationState = () => {
   left: 50%;
   width: 8px;
   height: 8px;
-  background: rgba(85, 85, 84); /* Semi-transparent red background */
-  border: 1px solid rgba(85, 85, 84); /* Red border */
-  border-radius: 50%; /* Circular shape */
-  transform: translate(-50%, -50%); /* Center the pseudo-element */
-  opacity: 0.8; /* Slightly transparent for better appearance */
-  display: block; /* Ensure the pseudo-element is displayed */
+  background: rgba(85, 85, 84); 
+  border: 1px solid rgba(85, 85, 84); 
+  border-radius: 50%;
+  transform: translate(-50%, -50%); 
+  opacity: 0.8; 
+  display: block; 
 }
 .swiper-pagination-bullet-active {
   border: 1px solid #b60101;
@@ -207,6 +203,6 @@ const updateNavigationState = () => {
   animation: none;
 }
 .behance:hover .image-switch {
-  animation-play-state: paused; /* Pause animation on hover */
+  animation-play-state: paused; 
 }
 </style>

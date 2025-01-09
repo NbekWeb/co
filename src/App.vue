@@ -6,7 +6,7 @@ import Pack from "./components/Pack.vue";
 import Connect from "./components/Connect.vue";
 </script>
 <template>
-  <div class="w-screen">
+  <div class="w-screen border-none">
     <Main />
     <div class="bg-dark">
       <OurWork />

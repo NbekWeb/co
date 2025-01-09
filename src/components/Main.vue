@@ -3,10 +3,9 @@ import { ref } from "vue";
 import Lang from "./Lang.vue";
 import Networks from "./Networks.vue";
 
-// Create a reactive state for video loaded status
+
 const isVideoLoaded = ref(false);
 
-// Handle the video load event
 const handleVideoLoad = () => {
   isVideoLoaded.value = true;
 };

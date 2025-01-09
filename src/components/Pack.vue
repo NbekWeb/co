@@ -102,8 +102,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  color: rgba(211, 220, 231, 1); /* Shadow color */
+  color: rgba(211, 220, 231, 1); 
   text-shadow: 0px 0px 14px rgba(46, 124, 214, 1);
-  z-index: -1; /* Place behind the clipped text */
+  z-index: -1;
 }
 </style>
